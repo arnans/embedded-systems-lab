@@ -1,28 +1,24 @@
-- [LAB 1 – การทดลองบน Wokwi (ESP32)](#lab-1--การทดลองบน-wokwi-esp32)
 - [เป้าหมายของการทดลองบน Wokwi](#เป้าหมายของการทดลองบน-wokwi)
-- [LAB 1.1 – Hello World (Serial Monitor)](#lab-11--hello-world-serial-monitor)
+- [LAB 1.1 - Hello World (Serial Monitor)](#lab-11---hello-world-serial-monitor)
   - [ขั้นตอน](#ขั้นตอน)
   - [สิ่งที่ต้องส่ง](#สิ่งที่ต้องส่ง)
-- [LAB 1.2 – ไฟกระพริบ (Blink LED)](#lab-12--ไฟกระพริบ-blink-led)
+- [LAB 1.2 - ไฟกระพริบ (Blink LED)](#lab-12---ไฟกระพริบ-blink-led)
   - [ขั้นตอน](#ขั้นตอน-1)
   - [สิ่งที่ต้องส่ง](#สิ่งที่ต้องส่ง-1)
-- [LAB 1.3 – ปุ่มกดและการอ่านสัญญาณ](#lab-13--ปุ่มกดและการอ่านสัญญาณ)
-  - [1) กดติด–ปล่อยดับ (Basic Button Control)](#1-กดติดปล่อยดับ-basic-button-control)
+- [LAB 1.3 - ปุ่มกดและการอ่านสัญญาณ](#lab-13---ปุ่มกดและการอ่านสัญญาณ)
+  - [1) กดติด-ปล่อยดับ (Basic Button Control)](#1-กดติด-ปล่อยดับ-basic-button-control)
     - [ขั้นตอน](#ขั้นตอน-2)
   - [สิ่งที่ต้องส่ง](#สิ่งที่ต้องส่ง-2)
-- [LAB 1.3.2 – นับจำนวนครั้งที่กดปุ่ม](#lab-132--นับจำนวนครั้งที่กดปุ่ม)
+- [LAB 1.3.2 - นับจำนวนครั้งที่กดปุ่ม](#lab-132---นับจำนวนครั้งที่กดปุ่ม)
   - [เป้าหมาย](#เป้าหมาย)
   - [ขั้นตอน](#ขั้นตอน-3)
   - [สิ่งที่ต้องส่ง](#สิ่งที่ต้องส่ง-3)
-- [LAB 1.3.3 – ดูสัญญาณ Bounce ด้วย Logic Analyzer](#lab-133--ดูสัญญาณ-bounce-ด้วย-logic-analyzer)
+- [LAB 1.3.3 - ดูสัญญาณ Bounce ด้วย Logic Analyzer](#lab-133---ดูสัญญาณ-bounce-ด้วย-logic-analyzer)
   - [ขั้นตอน](#ขั้นตอน-4)
   - [สิ่งที่ต้องส่ง](#สิ่งที่ต้องส่ง-4)
 - [รายการส่งทั้งหมด](#รายการส่งทั้งหมด)
 
-
-
-
-# LAB 1 – การทดลองบน Wokwi (ESP32)
+# LAB 1 - การทดลองบน Wokwi (ESP32)
 ใช้จำลองร่วมกับการทำปฏิบัติการจริง เพื่อช่วยให้เข้าใจหลักการ I/O, Pull-up, การอ่านปุ่ม, และ Bounce ของสัญญาณได้ชัดเจนขึ้น
 
 **บอร์ดที่ใช้:** `wokwi-esp32-devkit-v1`  
@@ -39,7 +35,7 @@
 
 ---
 
-# LAB 1.1 – Hello World (Serial Monitor)
+# LAB 1.1 - Hello World (Serial Monitor)
 
 ## ขั้นตอน
 1. เปิด Wokwi → สร้างโปรเจกต์ใหม่ → ESP32  
@@ -65,7 +61,7 @@ void loop() {
 
 ---
 
-# LAB 1.2 – ไฟกระพริบ (Blink LED)
+# LAB 1.2 - ไฟกระพริบ (Blink LED)
 
 
 
@@ -98,9 +94,9 @@ void loop() {
 
 ---
 
-# LAB 1.3 – ปุ่มกดและการอ่านสัญญาณ
+# LAB 1.3 - ปุ่มกดและการอ่านสัญญาณ
 
-## 1) กดติด–ปล่อยดับ (Basic Button Control)
+## 1) กดติด-ปล่อยดับ (Basic Button Control)
 
 ### ขั้นตอน
 1. เพิ่ม Pushbutton  
@@ -139,7 +135,7 @@ pinMode(BUTTON, INPUT_PULLUP);
 
 ---
 
-# LAB 1.3.2 – นับจำนวนครั้งที่กดปุ่ม
+# LAB 1.3.2 - นับจำนวนครั้งที่กดปุ่ม
 
 ## เป้าหมาย
 ป้องกันการนับรัวเมื่อกดค้าง
@@ -156,7 +152,7 @@ pinMode(BUTTON, INPUT_PULLUP);
 
 ---
 
-# LAB 1.3.3 – ดูสัญญาณ Bounce ด้วย Logic Analyzer
+# LAB 1.3.3 - ดูสัญญาณ Bounce ด้วย Logic Analyzer
 
 ## ขั้นตอน
 1. เพิ่ม Logic Analyzer  
@@ -175,9 +171,9 @@ pinMode(BUTTON, INPUT_PULLUP);
 ---
 
 # รายการส่งทั้งหมด
-1. LAB 1.1 – ผล Serial Monitor  
-2. LAB 1.2 – วงจร + LED กระพริบ  
-3. LAB 1.3.1 – วงจรปุ่ม + ผลกดติดปล่อยดับ  
-4. LAB 1.3.1 – อธิบาย external vs internal pull-up  
-5. LAB 1.3.2 – โค้ดนับปุ่ม + screenshot  
-6. LAB 1.3.3 – Bounce ใน PulseView
+1. LAB 1.1 - ผล Serial Monitor  
+2. LAB 1.2 - วงจร + LED กระพริบ  
+3. LAB 1.3.1 - วงจรปุ่ม + ผลกดติดปล่อยดับ  
+4. LAB 1.3.1 - อธิบาย external vs internal pull-up  
+5. LAB 1.3.2 - โค้ดนับปุ่ม + screenshot  
+6. LAB 1.3.3 - Bounce ใน PulseView
