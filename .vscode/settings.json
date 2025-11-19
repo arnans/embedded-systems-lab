@@ -1,0 +1,8 @@
+{
+    "chatgpt.openOnStartup": false,
+
+    "pasteImage.path": "images",
+    "pasteImage.createDirectory": true,
+    "pasteImage.insertPattern": "![](images/${imageFileName})"
+
+}
