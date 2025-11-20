@@ -179,28 +179,29 @@ pinMode(BUTTON, INPUT_PULLUP);
 2. ตรวจจับ HIGH→LOW transition  
 3. นับครั้งละ 1  
 4. พิมพ์ค่าลง Serial Monitor
+5. กระพริบ LED เป็นจำนวนครั้งเท่ากับที่นับ  (เช่น กดครั้งแรก→ไฟกระพริบ 1 ครั้ง กดครั้งที่ 5→ไฟกระพริบ 5 ครั้ง)
 
 ## สิ่งที่ต้องส่ง
-- โค้ดนับปุ่ม  
-- Screenshot Serial Monitor
-
+- ภาพ Pulse View แสดง Logic ผลการทำงานที่ถูกต้อง
+- 
 ---
 
 # LAB 1.3.3 - ดูสัญญาณ Bounce ด้วย Logic Analyzer
 
+- ในวงจรจริง เวลากดปุ่มมักจะเกิด Spark ที่สร้าง Noise ใน GPIO เป็นเวลาสั้น ๆ แต่สามารถทำให้การทำงานของโปรแกรมผิดเพี้ยนได้ เช่น Code นึกว่ามีการกดปุ่มรัวหลายครั้ง
+- ใน Simulator จะไม่มี Noise นี้ แต่สามารถจำลองได้โดยการเลือก Option Bounce ในปุ่มกดของ Wokwi
+
 ## ขั้นตอน
-1. เพิ่ม Logic Analyzer  
-2. ต่อ CH0 → GPIO32  
-3. เปิด bounce: ON  
-4. Run → กดปุ่ม → Stop  
-5. ดาวน์โหลด VCD  
-6. เปิดใน PulseView  
-7. เลือก sampling rate  
-8. ดู Bounce
+1. ใช้วงจรเดิม  
+2. เปิด bounce: ON  ในตัวเลือกของปุ่มกด  
+3. Run → กดปุ่ม → Stop  
+4. ดาวน์โหลด VCD  
+5. เปิดใน PulseView  
+6. Zoom เข้าไปดู Bounce ในช่วงที่ Logic เปลี่ยนจาก High→Low และ Low→High
 
 ## สิ่งที่ต้องส่ง
 - ภาพ Bounce จาก PulseView  
-- อธิบายปัญหา Bounce
+- อธิบายปัญหา Bounce ในความเข้าใจของท่าน
 
 ---
 
