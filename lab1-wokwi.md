@@ -169,7 +169,7 @@ pinMode(BUTTON, INPUT_PULLUP);
 
 ---
 
-# LAB 1.3.2 - นับจำนวนครั้งที่กดปุ่ม
+# LAB 1.4 - นับจำนวนครั้งที่กดปุ่ม
 
 ## เป้าหมาย
 ป้องกันการนับรัวเมื่อกดค้าง
@@ -186,7 +186,7 @@ pinMode(BUTTON, INPUT_PULLUP);
 - 
 ---
 
-# LAB 1.3.3 - ดูสัญญาณ Bounce ด้วย Logic Analyzer
+# LAB 1.5 - ดูสัญญาณ Bounce ด้วย Logic Analyzer
 
 - ในวงจรจริง เวลากดปุ่มมักจะเกิด Spark ที่สร้าง Noise ใน GPIO เป็นเวลาสั้น ๆ แต่สามารถทำให้การทำงานของโปรแกรมผิดเพี้ยนได้ เช่น Code นึกว่ามีการกดปุ่มรัวหลายครั้ง
 - ใน Simulator จะไม่มี Noise นี้ แต่สามารถจำลองได้โดยการเลือก Option Bounce ในปุ่มกดของ Wokwi
@@ -206,9 +206,9 @@ pinMode(BUTTON, INPUT_PULLUP);
 ---
 
 # รายการส่งทั้งหมด
-1. LAB 1.1 - ผล Serial Monitor  
-2. LAB 1.2 - วงจร + LED กระพริบ  
-3. LAB 1.3.1 - วงจรปุ่ม + ผลกดติดปล่อยดับ  
-4. LAB 1.3.1 - อธิบาย external vs internal pull-up  
-5. LAB 1.3.2 - โค้ดนับปุ่ม + screenshot  
-6. LAB 1.3.3 - Bounce ใน PulseView
+1. LAB 1.1 – ภาพหน้าจอ Serial Monitor แสดง “Hello World”
+2. LAB 1.2 – ภาพวงจรบน Wokwi และภาพ PulseView แสดงความกว้าง Pulse (1000 ms)
+3. LAB 1.3 – ภาพวงจร และภาพ PulseView แสดง Logic ของ GPIO
+4. LAB 1.4 – ภาพ PulseView แสดง Logic ผลการทำงานที่ถูกต้อง
+5. LAB 1.5 – ภาพ Bounce จาก PulseView และคำอธิบายปัญหา Bounce
+
