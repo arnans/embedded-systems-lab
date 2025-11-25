@@ -18,7 +18,7 @@
     - [ประเด็นเรียนรู้](#ประเด็นเรียนรู้-1)
     - [การส่งงาน](#การส่งงาน-1)
 - [Lab 2.3 การใช้ Transistor Array](#lab-23-การใช้-transistor-array)
-    - [ULN2003AN - 7 Channel Transistor Array (Or Driver)](#uln2003an---7-channel-transistor-array-or-driver)
+    - [ULN2003AN - 7 Channel Transistor Array (Or Driver)](#uln2003an7-channel-transistor-array-ordriver)
     - [การใช้งาน](#การใช้งาน)
     - [การทดลอง](#การทดลอง)
     - [ประเด็นเรียนรู้](#ประเด็นเรียนรู้-2)
