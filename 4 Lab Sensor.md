@@ -141,7 +141,11 @@ void loop() {
 ![LDR](images/ldr.jpg)
 
 **วิดีโอประกอบ**  
-https://www.youtube.com/embed/oHzir-ILy1E?feature=oembed
+
+[![Watch on YouTube](https://img.youtube.com/vi/oHzir-ILy1E/maxresdefault.jpg)](https://www.youtube.com/watch?v=oHzir-ILy1E)
+
+> YouTube Video - Click to play
+
 
 ---
 
