@@ -55,9 +55,12 @@ Vadc = Vcc * (Rref) / (Rsensor + Rref)
 
 ### ภาพวงจร
 #### Pull-up - ตัวต้านทานเชื่อมเข้ากับ +V
+
 ![Voltage Divider Pull-up](images/voltage-divider-pull-up.png)
 
+
 #### Pull-down - ตัวต้านทานต่อลง GND
+
 ![Voltage Divider Pull-down](images/voltage-divider-pull-down.png)
 
 ---
@@ -66,6 +69,7 @@ Vadc = Vcc * (Rref) / (Rsensor + Rref)
 
 ต้องรู้ช่วงค่าความต้านทานของเซ็นเซอร์ก่อน  
 เลือกค่า Rref ให้เหมาะสมเพื่อให้เกิดความแตกต่างของแรงดันมากพอสำหรับ ADC
+> โดยปกติค่า Rref จะอยู่ระหว่าง 10-47K
 
 ---
 
@@ -188,9 +192,13 @@ https://www.youtube.com/embed/oHzir-ILy1E?feature=oembed
 - สังเกตุกราฟ
 
 #### 3) ลองใช้ **Hardware Low-pass filter**
+- เอา Hysteresis ออก
 - ต่อวงจร Low-pass โดยลองตัวต้านทาน 1 K Ohms และ capacitor 10 µF ที่ ADC input → ค่าที่อ่านจะนิ่งขึ้น
 - สังเกตุกราฟ
 - ลองเปลี่ยนค่า R กับ C แล้วสังเกตุผล 
+
+![](images/low-pass-filter-circuit-adc.png)
+
 
 #### 4) ลองใช้ **Software Low-pass filter**
 - เอา R, C ออก
