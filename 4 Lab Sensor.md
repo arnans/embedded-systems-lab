@@ -1,4 +1,4 @@
-
+﻿
 # Lab 4: การเชื่อมต่อเซ็นเซอร์
 
 - [Lab 4: การเชื่อมต่อเซ็นเซอร์](#lab-4-การเชื่อมต่อเซ็นเซอร์)
@@ -142,7 +142,7 @@ void loop() {
 
 **วิดีโอประกอบ**  
 
-[![Watch on YouTube](https://img.youtube.com/vi/oHzir-ILy1E/maxresdefault.jpg)](https://www.youtube.com/watch?v=oHzir-ILy1E)
+[![Watch on YouTube](images/youtube-oHzir-ILy1E.png)](https://www.youtube.com/watch?v=oHzir-ILy1E)
 
 > YouTube Video - Click to play
 

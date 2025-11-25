@@ -75,7 +75,7 @@ MQTT (Message Queuing Telemetry Transport) เป็นแนวทางกา�
 
 ### การทดลอง
 
-[![Watch on YouTube](https://img.youtube.com/vi/5aGjZjNFfmk/maxresdefault.jpg)](https://www.youtube.com/watch?v=5aGjZjNFfmk)
+[![Watch on YouTube](images/youtube-5aGjZjNFfmk.png)](https://www.youtube.com/watch?v=5aGjZjNFfmk)
 
 > YouTube Video - Click to play
 
@@ -137,7 +137,7 @@ test.mosquitto.org เป็น Public Broker สามารถเข้าใ�
 
 ## 2. การต่อ ESP32 เข้ากับระบบเครือข่าย
 
-[![Watch on YouTube](https://img.youtube.com/vi/DfKreqLxmOs/maxresdefault.jpg)](https://www.youtube.com/watch?v=DfKreqLxmOs)
+[![Watch on YouTube](images/youtube-DfKreqLxmOs.png)](https://www.youtube.com/watch?v=DfKreqLxmOs)
 
 > YouTube Video - Click to play
 
@@ -193,7 +193,7 @@ ESP32 มี Wifi ในตัว ซึ่งสามารถเขียน�
 
 ## 3. เขียนโปรแกรมสมองกลฝังตัวเพื่อรับและส่งค่าผ่าน MQTT
 
-[![Watch on YouTube](https://img.youtube.com/vi/2xZW4Wi88l0/maxresdefault.jpg)](https://www.youtube.com/watch?v=2xZW4Wi88l0)
+[![Watch on YouTube](images/youtube-2xZW4Wi88l0.png)](https://www.youtube.com/watch?v=2xZW4Wi88l0)
 
 > YouTube Video - Click to play
 
@@ -363,7 +363,7 @@ MQTT จำเป็นต้องใช้ library ภายนอกเพิ
 
 ## 4. การสร้าง MQTT Dashboard
 
-[![Watch on YouTube](https://img.youtube.com/vi/_4zVNPEZI8g/maxresdefault.jpg)](https://www.youtube.com/watch?v=_4zVNPEZI8g)
+[![Watch on YouTube](images/youtube-_4zVNPEZI8g.png)](https://www.youtube.com/watch?v=_4zVNPEZI8g)
 
 > YouTube Video - Click to play
 

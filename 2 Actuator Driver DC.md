@@ -132,7 +132,7 @@ Transistor แบบ NPN เป็นชนิดที่ได้รับค�
 
 ## Lab 2.3 การใช้ Transistor Array
 
-[![Watch on YouTube](https://img.youtube.com/vi/MS4ux5BFwv8/maxresdefault.jpg)](https://www.youtube.com/watch?v=MS4ux5BFwv8)
+[![Watch on YouTube](images/youtube-MS4ux5BFwv8.png)](https://www.youtube.com/watch?v=MS4ux5BFwv8)
 
 > YouTube Video - Click to play
 
@@ -206,7 +206,7 @@ Stepping Motor เป็นมอเตอร์ที่สามารถส�
 
 ## Lab 2.4 การขับโหลดด้วย H-Bridge
 
-[![Watch on YouTube](https://img.youtube.com/vi/Z0A0D6FUrIc/maxresdefault.jpg)](https://www.youtube.com/watch?v=Z0A0D6FUrIc)
+[![Watch on YouTube](images/youtube-Z0A0D6FUrIc.png)](https://www.youtube.com/watch?v=Z0A0D6FUrIc)
 
 > YouTube Video - Click to play.
 
