@@ -156,8 +156,7 @@ https://www.youtube.com/embed/oHzir-ILy1E?feature=oembed
 - การต่อวงจรแบบ Pull-up - แสดงภาพวงจรและเส้นกราฟ 
 - การต่อวงจรแบบ Pull-down - แสดงภาพวงจรและเส้นกราฟ 
 
-
-
+---
 
 ## 3.2 Hysteresis & Low-pass Filter - วิธีป้องกันไม่ให้เกิดการเปลี่ยน State ถี่เกินไป
 
