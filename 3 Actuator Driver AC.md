@@ -110,11 +110,11 @@
 
 > YouTube Video - Click to play
 
+4. ตรวจสอบและลองเขียนโปรแกรม
+
 [![Watch on YouTube](images/youtube-XH41YsRm1xw.png)](https://www.youtube.com/watch?v=XH41YsRm1xw) 
 
 > YouTube Video - Click to play
-
-4. ตรวจสอบและลองเขียนโปรแกรม
 
 ให้อาจารย์หรือทีมงานตรวจสอบความถูกต้องของวงจร ก่อนเสียบปลั๊กไฟเสมอ เพื่อป้องกันอันตราย
 
