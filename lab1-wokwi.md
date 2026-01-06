@@ -232,3 +232,18 @@ pinMode(BUTTON, INPUT_PULLUP);
 4. LAB 1.5 – ภาพ PulseView แสดง Logic ผลการทำงานที่ถูกต้อง
 5. LAB 1.6 – ภาพ Bounce จาก PulseView และคำอธิบายปัญหา Bounce
 
+
+
+## สัญญาอนุญาต (License)
+
+![CC BY-SA](https://licensebuttons.net/l/by-sa/4.0/88x31.png)
+
+ผลงานนี้เผยแพร่ภายใต้สัญญาอนุญาต  
+**Creative Commons Attribution–ShareAlike 4.0 International (CC BY-SA 4.0)**  
+อนุญาตให้นำไปใช้ แก้ไข และเผยแพร่ต่อได้ โดยต้องระบุที่มา  
+และเผยแพร่ภายใต้สัญญาอนุญาตเดียวกัน
+
+โดย  
+อ.ดร.อานันท์ สีห์พิทักษ์เกียรติ  
+ภาควิชาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์  
+มหาวิทยาลัยเชียงใหม่
