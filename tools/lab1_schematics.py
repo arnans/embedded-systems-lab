@@ -118,6 +118,6 @@ with schemdraw.Drawing(show=False) as d:   # CM button: R22 5.1k pull-up, C11 10
     d.add(elm.Ground())
     d.pop()
     d.add(elm.Line().left(3.2))
-    d.add(elm.Button().down().label("U6\n(ปุ่มใหญ่)", loc="top", ofst=0.4))
+    d.add(elm.Button().down().label("U6\n(Run / Stop)", loc="top", ofst=0.4))
     d.add(elm.Ground())
     save(d, "lab1-cm-button.png")
