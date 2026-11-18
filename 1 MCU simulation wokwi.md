@@ -28,7 +28,7 @@ ESP32 มีรุ่นย่อย เช่น ESP32-C3, ESP32-S3 แนะ�
 
 **เว็บไซต์:** https://wokwi.com
 
-**ขาที่ใช้:** LED ต่อกับ GPIO23 และปุ่มกดต่อกับ GPIO4 เหมือนกันทั้งใน Wokwi และวงจรบน Breadboard ส่วนบอร์ด CM (ESP32-S3) ต่อ LED ไว้ที่ขา IO6 ดูเหตุผลได้ใน[ใบงานบอร์ด CM](1%20MCU%20CM%20board.md)
+**ขาที่ใช้:** LED ต่อกับ GPIO23 และปุ่มกดต่อกับ GPIO4 เหมือนกันทั้งใน Wokwi และวงจรบน Breadboard ส่วนบอร์ด GoGo CM (ESP32-S3) ต่อ LED ไว้ที่ขา IO6 ดูเหตุผลได้ใน[ใบงานบอร์ด GoGo CM](1%20MCU%20GoGo%20CM%20board.md)
 
 ---
 

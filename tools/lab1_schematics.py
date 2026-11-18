@@ -1,7 +1,8 @@
 """Generate the Lab 1 schematics (placeholders until redrawn in EasyEDA).
 
 Shared pins (decided 18 Nov 2026): kit ESP32 and Wokwi use LED = GPIO23, button = GPIO4.
-The GoGo CM (ESP32-S3) has its LED on IO6 and the big button (U6) on IO4, with R22 5.1k + C11 100nF.
+The GoGo CM sheet has no drawings of its own: students read the board's schematic
+(schematics/GoGo CM schematic.pdf, page 1 rendered as images/gogo-cm-schematic-p1.png).
 
     python tools/lab1_schematics.py      # writes images/lab1-*.png
 """
@@ -91,33 +92,3 @@ with schemdraw.Drawing(show=False) as d:   # 08: RC debounce (33k series + 100nF
     ic = esp32(d, ["GPIO4"])
     button_circuit(d, ic.GPIO4, "R2\n10kΩ", "R2 10kΩ", series="R3 33kΩ", cap="C1\n100nF", analyzer=True)
     save(d, "lab1-breadboard-08.png")
-
-# --- CM sheet (on-board parts, from the EasyEDA netlist) ---------------------------
-with schemdraw.Drawing(show=False) as d:   # CM LED: IO6 -> R23 1k -> LED2 (red) -> GND
-    ic = esp32(d, ["IO6"], label="ESP32-S3 (บอร์ด CM)")
-    d.move_from(ic.IO6)
-    d.add(elm.Line().left(1.2))
-    d.add(elm.Resistor().down().label("R23 1kΩ", loc="bottom"))
-    d.add(elm.LED().down().label("LED2 (แดง)", loc="bottom"))
-    d.add(elm.Ground())
-    save(d, "lab1-cm-led.png")
-
-with schemdraw.Drawing(show=False) as d:   # CM button: R22 5.1k pull-up, C11 100nF to GND, U6 to GND, IO4
-    ic = esp32(d, ["IO4"], label="ESP32-S3 (บอร์ด CM)")
-    d.move_from(ic.IO4)
-    d.add(elm.Line().left(1.2))
-    d.add(elm.Dot())
-    d.push()
-    d.add(elm.Resistor().up().label("R22 5.1kΩ", loc="bottom"))
-    d.add(elm.Vdd().label("3V3"))
-    d.pop()
-    d.add(elm.Line().left(1.8))
-    d.add(elm.Dot())
-    d.push()
-    d.add(elm.Capacitor().down().label("C11\n100nF", loc="bottom"))
-    d.add(elm.Ground())
-    d.pop()
-    d.add(elm.Line().left(3.2))
-    d.add(elm.Button().down().label("U6\n(Run / Stop)", loc="top", ofst=0.4))
-    d.add(elm.Ground())
-    save(d, "lab1-cm-button.png")
