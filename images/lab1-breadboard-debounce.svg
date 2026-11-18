@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="330" viewBox="0 0 640 330"
+     role="img" aria-labelledby="title desc">
+  <title id="title">Lab 1C — ESP32 pushbutton debounce circuit</title>
+  <desc id="desc">A 10 kilohm pull-up connects 3.3 volts to the switch node. A normally open pushbutton connects this node to ground. A 33 kilohm series resistor connects the switch node to GPIO4. A 100 nanofarad capacitor connects GPIO4 to ground.</desc>
+  <rect x="0" y="0" width="640" height="330" rx="10" fill="#fff"/>
+  <g fill="none" stroke="#17232e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- R2 connects 3V3 to the raw switch node. -->
+    <path d="M143 52h14 M150 52v26 l-8 5 16 10 -16 10 16 10 -16 10 8 5 v38"/>
+    <!-- R3 connects the switch node to the filtered GPIO4 node. -->
+    <path d="M150 166h76 l5-8 10 16 10-16 10 16 10-16 10 16 5-8 h114"/>
+    <path d="M400 166h105"/>
+    <circle cx="509" cy="166" r="4" fill="#fff"/>
+    <!-- Normally open switch to ground. -->
+    <path d="M150 166v44 M150 257v26"/>
+    <circle cx="150" cy="214" r="4" fill="#fff"/>
+    <circle cx="150" cy="253" r="4" fill="#fff"/>
+    <path d="M151 249l18-25 M138 283h24 M142 289h16 M146 295h8"/>
+    <!-- C1 connects GPIO4 to ground. -->
+    <path d="M400 166v62 M387 228h26 M387 240h26 M400 240v43"/>
+    <path d="M388 283h24 M392 289h16 M396 295h8"/>
+  </g>
+  <g fill="#17232e">
+    <circle cx="150" cy="166" r="4.5"/>
+    <circle cx="400" cy="166" r="4.5"/>
+  </g>
+  <g fill="#17232e" font-family="Arial, sans-serif" font-size="17">
+    <text x="150" y="39" text-anchor="middle" font-weight="bold">3.3 V</text>
+    <text x="170" y="108">R2  10 kΩ</text>
+    <text x="256" y="143" text-anchor="middle">R3  33 kΩ</text>
+    <text x="524" y="172" font-weight="bold">GPIO4</text>
+    <text x="181" y="240">SW</text>
+    <text x="425" y="240">C1  100 nF</text>
+    <text x="150" y="317" text-anchor="middle" font-size="14">GND</text>
+    <text x="400" y="317" text-anchor="middle" font-size="14">GND</text>
+  </g>
+  <g fill="#34536a" font-family="Arial, sans-serif" font-size="15">
+    <text x="137" y="171" text-anchor="end">Raw button</text>
+    <text x="400" y="204" text-anchor="end" dx="-12">Filtered signal</text>
+  </g>
+</svg>
