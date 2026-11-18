@@ -28,6 +28,8 @@ ESP32 มีรุ่นย่อย เช่น ESP32-C3, ESP32-S3 แนะ�
 
 **เว็บไซต์:** https://wokwi.com
 
+**ขาที่ใช้:** LED = GPIO23, ปุ่มกด = GPIO4 — ใช้ขาเดียวกันทั้งใน Wokwi และวงจรบน Breadboard ส่วนบอร์ด CM (ESP32-S3) ใช้ LED = IO6 ดูเหตุผลใน[ชีทบอร์ด CM](1%20MCU%20CM%20board.md)
+
 ---
 
 # เป้าหมายของการทดลองบน Wokwi
@@ -123,17 +125,18 @@ void loop() {
 
 ### ขั้นตอน
 1. เพิ่ม Pushbutton  
-2. ต่อปุ่มเข้ากับ GPIO32 + external pull-up  
-3. ต่อขา D1 ของ Logic Analyzer เข้ากับขา GPIO32
+2. ต่อปุ่มเข้ากับ GPIO4 + external pull-up  
+3. ต่อขา D1 ของ Logic Analyzer เข้ากับขา GPIO4
 
 ![](images/2025-11-20-06-18-05.png)
+*(ภาพนี้มาจากฉบับเดิมที่ต่อปุ่มกับ GPIO32 — ให้ต่อปุ่มที่ GPIO4 ตามขั้นตอน)*
 
 
 4. ใช้โค้ด "กดติดปล่อยดับ" ต่อไปนี้:
 
 ```cpp
 #define LED 23
-#define BUTTON 32
+#define BUTTON 4
 
 void setup() {
   pinMode(LED, OUTPUT);
@@ -153,7 +156,7 @@ void loop() {
 6. ศึกษาหลักการวงจร Pull-up 
 
 - ดูผล Pulse - ควรเห็นว่า Logic ของ D0 และ D1 จะตรงกันข้ามเสมอ
-- ฝั่งปุ่มกด GPIO32 มีตัวต้านทานต่อขึ้น +3.3V เราเรียกว่า Pull-up เมื่อกดปุ่ม GPIO32 จะถูกดึงลง GND จึงเป็นเหตุผลว่า Pulse ของ GPIO32 กับ GPIO23 จะกลับสถานะกันเสมอ
+- ฝั่งปุ่มกด GPIO4 มีตัวต้านทานต่อขึ้น +3.3V เราเรียกว่า Pull-up เมื่อกดปุ่ม GPIO4 จะถูกดึงลง GND จึงเป็นเหตุผลว่า Pulse ของ GPIO4 กับ GPIO23 จะกลับสถานะกันเสมอ
 
 7. ทดลอง Internal Pull-up:
 
@@ -174,10 +177,11 @@ pinMode(BUTTON, INPUT_PULLUP);
 # LAB 1.4 - เปลี่ยนวงจรปุ่มเป็น Pull-down
 
 ![](images/วงจร-pull-down.png)
+*(ภาพนี้มาจากฉบับเดิมที่ต่อปุ่มกับ GPIO32 — ให้ต่อปุ่มที่ GPIO4 ตามขั้นตอน)*
 
 ## ขั้นตอน
-1. ต่อตัวต้านทานที่ GPIO32 แต่แทนที่จะต่อขึ้นไฟให้ต่อลง GND แทน
-2. ปรับวงจรให้ปุ่มเชื่อม GPIO32 เข้ากับไฟเมื่อกด
+1. ต่อตัวต้านทานที่ GPIO4 แต่แทนที่จะต่อขึ้นไฟให้ต่อลง GND แทน
+2. ปรับวงจรให้ปุ่มเชื่อม GPIO4 เข้ากับไฟเมื่อกด
 3. Disable internal pullup
 4. ลองโปรแกรมเดิม ควรเห็นว่าพฤติกรรมผิด คือจะกลายเป็น "กดดับ-ปล่อยติด" 
 5. แก้ไขโปรแกรม เพื่อให้กลับมาถูกต้อง คือ "กดติด-ปล่อยดับ"
@@ -202,7 +206,7 @@ pinMode(BUTTON, INPUT_PULLUP);
 
 ## สิ่งที่ต้องส่ง
 - ภาพ Pulse View แสดง Logic ผลการทำงานที่ถูกต้อง
-- 
+
 ---
 
 # LAB 1.6 - ดูสัญญาณ Bounce ด้วย Logic Analyzer
@@ -229,8 +233,8 @@ pinMode(BUTTON, INPUT_PULLUP);
 2. LAB 1.2 – ภาพวงจรบน Wokwi และภาพ PulseView แสดงความกว้าง Pulse (1000 ms)
 3. LAB 1.3 – ภาพวงจร และภาพ PulseView แสดง Logic ของ GPIO
 4. LAB 1.4 - ภาพวงจร และภาพ PulseView แสดง Logic ของ GPIO
-4. LAB 1.5 – ภาพ PulseView แสดง Logic ผลการทำงานที่ถูกต้อง
-5. LAB 1.6 – ภาพ Bounce จาก PulseView และคำอธิบายปัญหา Bounce
+5. LAB 1.5 – ภาพ PulseView แสดง Logic ผลการทำงานที่ถูกต้อง
+6. LAB 1.6 – ภาพ Bounce จาก PulseView และคำอธิบายปัญหา Bounce
 
 
 
